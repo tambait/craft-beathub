@@ -1,0 +1,130 @@
+{% set baseUrl = alias("@web") ~ "/" %}
+{% header "Link: <#{baseUrl}>; rel=dns-prefetch;,<#{baseUrl}>; rel=preconnect; crossorigin;"
+%}
+<!DOCTYPE html>
+<html
+  lang="{{ craft.app.language|slice(0, 2) }}"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="dns-prefetch" href="{{ baseUrl }}" />
+    <link rel="preconnect" href="{{ baseUrl }}" crossorigin="anonymous" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="{{ url("feed.rss") }}"
+    />
+    <meta name="theme-color" content="white" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/images/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#28313d" />
+    <script type="speculationrules">
+      { "prerender": [{ "where": { "href_matches": "/*" }, "eagerness":
+      "conservative" }] }
+    </script>
+    {% if extraHead is defined %}{{ extraHead }}{% endif %}
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    {{ head() }}
+  </head>
+  <body>
+    {% set headerConfig = {
+      logoText: "beatHub",
+      logoUrl: "/",
+      links: [
+        {
+          name: "Home",
+          url: "/",
+          active: true
+        },
+        {
+          name: "Artists",
+          url: "/artists",
+          active: false
+        },
+        {
+          name: "Albums",
+          url: "/albums",
+          active: false
+        }
+      ]
+    } %}
+    {% include "showcase/_modules/header" with {
+      headerConfig: headerConfig
+    } only %}
+    {# Get current page slug or handle #}
+    {% set currentPage = entry.slug ?? entry.type.handle ?? "home" %}
+    {# Get current language #}
+    {% set currentLang = craft.app.language|slice(0, 2) %}
+    {% set pageContext = craft.app.request.getSegment(1) %}
+    {% block hero %}
+      {% import "showcase/_macros.twig" as m %}
+      {% set heroTitle = entry.title ?? pageContext ?? category.title ?? null %}
+      {% set heroDesc = entry.description ?? null %}
+      {# Prepare badges, passing null if the query doesn't exist #}
+      {% set genresQuery = entry.genres ?? null %}
+      {% set genreBadges = genresQuery and genresQuery.exists()
+        ? m.entryBadges(genresQuery.all())
+        : null
+      %}
+      {% include "showcase/_modules/blocks/hero.twig" with {
+        title: heroTitle|capitalize,
+        description: heroDesc,
+        image: entry.featuredImage.one().url ?? null,
+        badges: genreBadges
+      } only %}
+    {% endblock %}
+    <main class="container mx-auto p-4">
+      {% block content %}
+
+      {% endblock %}
+    </main>
+    {% if block("sidebar") is defined %}
+      <aside id="aside">
+        <div class="content">
+          {% block sidebar %}
+
+          {% endblock %}
+        </div>
+      </aside>
+    {% endif %}
+    {# Display Global Set #}
+    {% include "showcase/_modules/blocks/promo-section.twig" with {
+      promo: promoSection
+    } only %}
+    {% if entry is defined %}
+      {% include "showcase/_modules/modules" with {
+        entry: entry
+      } %}
+    {% endif %}
+    {% include "showcase/_modules/footer.twig" only %}
+  </body>
+</html>

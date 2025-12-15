@@ -1,0 +1,44 @@
+{#
+/**
+ * Artist Card Type (Project-Specific)
+ * Custom rendering for artist entries
+ * 
+ * @param {object} item - Artist entry to display
+ * @param {string} type - Should be 'artist'
+ */
+#}
+{% import "showcase/_macros.twig" as m %}
+{% embed "showcase/_components/card-grid-item"
+  with {
+    item: item,
+    type: type
+  }
+%}
+  {% block image_field %}
+    {# Artist-specific image field mapping #}
+    {% set imageField = item.artistImage ?? item.image ?? null %}
+    {% set image = imageField|length ? imageField.one() : null %}
+    {% if image %}
+      <img
+        src="{{ image.url }}"
+        alt="{{ item.title }}"
+        class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+      />
+    {% else %}
+      {{ parent() }}
+    {% endif %}
+  {% endblock %}
+  {% block metadata %}
+    {# Artist-specific metadata #}
+    {% if item.genres.exists() %}
+      <div class="flex flex-wrap gap-2">
+        {{ m.entryBadges(item.genres) }}
+      </div>
+    {% endif %}
+    {% if item.description %}
+      <p class="text-base-content/80 line-clamp-2 text-sm">
+        {{ item.description }}
+      </p>
+    {% endif %}
+  {% endblock %}
+{% endembed %}

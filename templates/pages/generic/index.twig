@@ -1,0 +1,32 @@
+{% extends "_layouts/layout.twig" %}
+{% block content %}
+  {% if pageContext == "artists" %}
+    {% set artists =
+      craft.app.mQuery.getArtists({
+        orderBy: "title"
+      }).all()
+    %}
+    {% include "showcase/_components/card-grid-section" with {
+      items: artists,
+      type: "artist",
+      title: "Artists",
+      columns: "3"
+    } %}
+  {% endif %}
+  {% if pageContext == "albums" %}
+    {% set albums =
+      craft.app.mQuery.getAlbums({
+        orderBy: "postDate desc",
+        limit: 20
+      }).with(
+        ["coverImage", "artist"]
+      ).all()
+    %}
+    {% include "showcase/_components/card-grid-section" with {
+      items: albums,
+      type: "album",
+      title: "Albums",
+      columns: "3"
+    } %}
+  {% endif %}
+{% endblock %}

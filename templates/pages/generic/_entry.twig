@@ -1,0 +1,39 @@
+{% extends "_layouts/layout.twig" %}
+{% block content %}
+  {% if category is defined %}
+    {% set genreAlbums =
+      craft.app.mQuery.getAlbumsBySimilarGenres([category.id], 15).all()
+    %}
+    {% set artists =
+      craft.entries().section("artists").relatedTo(category).all()
+    %}
+    {% set allAlbums = [] %}
+    {% for artist in artists %}
+      {% set artistsAlbums = artist.relatedAlbums.all() %}
+      {% set allAlbums = allAlbums|merge(artistsAlbums) %}
+    {% endfor %}
+    {% include "showcase/_components/card-grid-section" with {
+      items: artists,
+      type: "artist",
+      title: "Artists",
+      columns: "3"
+    } %}
+    {% include "showcase/_components/card-grid-section" with {
+      items: allAlbums,
+      type: "album",
+      title: "Albums",
+      columns: "3"
+    } %}
+  {% else %}
+    <p>
+      Category not found.
+    </p>
+  {% endif %}
+  {% if entry is defined %}
+    <div class="mt-10">
+      {% include "_modules/modules" with {
+        entry: entry
+      } %}
+    </div>
+  {% endif %}
+{% endblock %}

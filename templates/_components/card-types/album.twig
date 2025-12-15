@@ -1,0 +1,46 @@
+{#
+/**
+ * Album Card Type (Project-Specific)
+ * Custom rendering for album entries
+ * 
+ * @param {object} item - Album entry to display
+ * @param {string} type - Should be 'album'
+ */
+#}
+{% embed "showcase/_components/card-grid-item"
+  with {
+    item: item,
+    type: type
+  }
+%}
+  {% block image_field %}
+    {# Album-specific image field mapping #}
+    {% set imageField = item.albumInfo.albumCover ?? item.coverImage
+      ?? item.image
+      ?? null
+    %}
+    {% set image = imageField|length ? imageField.one() : null %}
+    {% if image %}
+      <img
+        src="{{ image.url }}"
+        alt="{{ item.title }}"
+        class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+      />
+    {% else %}
+      {{ parent() }}
+    {% endif %}
+  {% endblock %}
+  {% block metadata %}
+    {# Album-specific metadata #}
+    {% if item.albumInfo.artists %}
+      <p class="text-base-content/60 text-sm">
+        {{ m.entryLinks(item.albumInfo.artists) }}
+      </p>
+    {% endif %}
+    {% if item.albumInfo.releaseYear %}
+      <p class="text-base-content/60 text-sm">
+        {{ item.albumInfo.releaseYear }}
+      </p>
+    {% endif %}
+  {% endblock %}
+{% endembed %}

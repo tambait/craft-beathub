@@ -1,0 +1,198 @@
+{% extends "_layouts/layout.twig" %}
+{% block title %}
+  {{ entry.title }}
+{% endblock %}
+{% import "showcase/_macros.twig" as m %}
+{% set mastodonPosts =
+  craft.app.modules.socialnews.feed.getMastodonPosts("mastodon.social", 5, 3)
+%}
+{% set upcomingEvents =
+  craft.app.eventService.getEventsByArtist(
+    entry.id,
+    {
+      limit: 5
+    }
+  ).all()
+%}
+{% set biography = entry.biography
+  ?? "Phasellus fermentum malesuada phasellus netus dictum aenean placerat egestas amet. Ornare taciti semper dolor tristique morbi. Sem leo tincidunt aliquet semper eu lectus scelerisque quis. Sagittis vivamus mollis nisi mollis enim fermentum laoreet."
+%}
+{% set genreIds = entry.genres.ids() %}
+{% if genreIds %}
+  {% set similarGenreAlbums =
+    craft.app.mQuery.getAlbumsBySimilarGenres(genreIds, entry.id).all()
+  %}
+{% else %}
+  {% set similarGenreAlbums = [] %}
+{% endif %}
+{% set allRelatedAlbums = entry.relatedAlbums|merge(similarGenreAlbums) %}
+{% block content %}
+  <section class="container mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 gap-12 md:grid-cols-3">
+      {# LEFT COLUMN: (1/3 Width) #}
+      <aside class="h-fit md:sticky md:top-8">
+        {# Artist Image #}
+        {% set artistImg = entry.artistImage.one() %}
+        <div
+          class="mb-6 aspect-square w-full overflow-hidden rounded-2xl shadow-xl"
+        >
+          <img
+            src="{{ artistImg.url ?? "via.placeholder.com" }}"
+            alt="{{ entry.title }}"
+            class="h-full w-full object-cover"
+          />
+        </div>
+        {# Social Links #}
+        <div class="flex flex-wrap justify-center gap-3 md:justify-start">
+          {% if entry.websiteUrl is not empty %}
+            <a
+              href="{{ entry.websiteUrl.url }}"
+              class="btn"
+              target="_blank"
+              title="{{ entry.title }}"
+            >
+              🔗 Website
+            </a>
+          {% endif %}
+          {% for block in entry.streamingPlatforms.all() %}
+            {% set platform = block.streamingPlatformsDropdown.value %}
+            <a
+              href="{{ block.genericLink.url }}"
+              class="btn"
+              target="_blank"
+              title="{{ block.streamingPlatformsDropdown.value }}"
+            >
+              {{ platform == "youtube" ? "📺" : "🔗" }} {{ platform }}
+            </a>
+          {% endfor %}
+        </div>
+        {% include "showcase/_components/_social-networks.twig" with {
+          posts: mastodonPosts
+        } only %}
+      </aside>
+      {# RIGHT COLUMN: (2/3 Width) #}
+      <article class="space-y-6 md:col-span-2">
+        <h1 class="text-4xl font-extrabold md:text-5xl">{{ entry.title }}</h1>
+        <div class="prose prose-lg max-w-none">
+          <div class="relative overflow-hidden">
+            {{
+              biography
+                |retconAttr(
+                  "p",
+                  {
+                    class: "mb-4"
+                  }
+                )
+                |raw
+            }}
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <div role="tablist" class="tabs tabs-lifted">
+    <input
+      type="radio"
+      name="artist_tabs"
+      role="tab"
+      class="tab"
+      aria-label="Albums"
+      checked
+    />
+    <div
+      role="tabpanel"
+      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+    >
+      <h2 class="mb-2 text-3xl font-light text-gray-900">Songs</h2>
+      {% include "showcase/_components/card-grid-section" with {
+        items: similarGenreAlbums,
+        type: "album",
+        title: "Albums",
+        columns: "3"
+      } %}
+    </div>
+    <input
+      type="radio"
+      name="artist_tabs"
+      role="tab"
+      class="tab"
+      aria-label="Songs"
+    />
+    <div
+      role="tabpanel"
+      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+    >
+      <h2 class="mb-2 text-3xl font-light text-gray-900">Songs</h2>
+      <div class="overflow-x-auto">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Title</th>
+              <th>Album</th>
+              <th>Duration</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {% if entry.relatedSongs is not empty %}
+              {% for song in entry.relatedSongs %}
+                <tr>
+                  <td>{{ loop.index }}</td>
+                  <td>{{ song.title }}</td>
+                  <td>{{ song.album }}</td>
+                  <td>{{ song.duration }}</td>
+                  <td>
+                    <a href="{{ song.url }}" class="btn btn-ghost btn-xs">
+                      View
+                    </a>
+                  </td>
+                </tr>
+              {% endfor %}
+            {% else %}
+              <tr>
+                <td>No songs yet</td>
+              </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <input
+      type="radio"
+      name="artist_tabs"
+      role="tab"
+      class="tab"
+      aria-label="Events"
+    />
+    <div
+      role="tabpanel"
+      class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+    >
+      <h2 class="mb-2 text-3xl font-light text-gray-900">Events</h2>
+      <div class="space-y-4">
+        {% if upcomingEvents is not empty %}
+          {% for event in upcomingEvents %}
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title">{{ event.title }}</h3>
+                <p>
+                  {{ event.venue }} - {{ event.schedule.date }}
+                </p>
+                <div class="card-actions justify-end">
+                  <a href="{{ event.url }}" class="btn btn-sm btn-primary">
+                    Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        {% else %}
+          <p>
+            No band related events yet
+          </p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

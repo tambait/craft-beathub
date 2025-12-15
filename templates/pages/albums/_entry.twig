@@ -1,0 +1,76 @@
+{% extends "_layouts/layout.twig" %}
+{% block title %}
+  {{ entry.title }}
+{% endblock %}
+{% import "showcase/_macros/media.twig" as mediam %}
+
+{% set platforms = entry.streamingPlatforms.all() %}
+{% set heroImg = entry.albumArtists.one().featuredImage.one().url ?? null %}
+{% set singleAlbumArtist = entry.albumInfo.artists.one() %}
+
+{% set mastodonPosts =
+  craft.app.modules.socialnews.feed.getMastodonPosts("mastodon.social", 5, 3)
+%}
+
+{% block hero %}
+  {% import "showcase/_macros.twig" as m %}
+  {% set heroTitle = entry.title ?? pageContext ?? category.title ?? null %}
+  {% set heroDesc = entry.albumInfo.artists.one().description ?? null %}
+  {% set genreBadges = m.entryBadges(entry.albumInfo.artists) %}
+  {% include "showcase/_modules/blocks/hero.twig" with {
+    title: heroTitle|capitalize,
+    description: "by " ~ heroDesc,
+    image: entry.featuredImage.one().url ?? null,
+    badges: genreBadges
+  } only %}
+{% endblock %}
+
+{% block content %}
+  <section class="container mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 gap-12 md:grid-cols-3">
+      {# LEFT COLUMN: (1/3 Width) #}
+      <aside class="h-fit md:sticky md:top-8">
+        {{ entry.websiteUrl }}
+        {{ entry.location }}
+        {% for block in platforms %}
+          {{ mediam.embedMedia(block) }}
+        {% endfor %}
+        {% include "showcase/_components/_social-networks.twig" with {
+          posts: mastodonPosts
+        } only %}
+      </aside>
+      {# RIGHT COLUMN: (2/3 Width) #}
+      <article class="space-y-6 md:col-span-2">
+        <h1 class="text-4xl font-extrabold md:text-5xl">
+          {{ singleAlbumArtist.title }} - {{ entry.title }}
+        </h1>
+        <div class="prose prose-lg max-w-none">
+          <div class="relative overflow-hidden">
+            {{
+              singleAlbumArtist.biography
+                |retconAttr(
+                  "p",
+                  {
+                    class: "mb-4"
+                  }
+                )
+                |raw
+            }}
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  {% set artists =
+    craft.app.mQuery.getArtists({
+      orderBy: "title"
+    }).all()
+  %}
+  {% include "showcase/_components/card-grid-section" with {
+    items: artists,
+    type: "artist",
+    title: "Artists",
+    columns: "3"
+  } %}
+{% endblock %}
