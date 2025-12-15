@@ -10,6 +10,6 @@
  */
 
 return [
-    'artists' => ['template' => 'pages/artists/index'],
-    'albums' => ['template' => 'pages/albums/index'],
+    'artists' => ['template' => 'pages/generic/index'],
+    'albums' => ['template' => 'pages/generic/index'],
 ];
