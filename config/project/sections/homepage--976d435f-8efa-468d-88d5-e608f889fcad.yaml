@@ -17,5 +17,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: index.twig
-    uriFormat: homepage
+    uriFormat: __home__
 type: single

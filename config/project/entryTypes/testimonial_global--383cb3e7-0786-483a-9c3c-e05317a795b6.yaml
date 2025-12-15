@@ -3,6 +3,12 @@ description: null
 fieldLayouts:
   b1286504-6f48-415b-81d9-4d6e7112d614:
     cardThumbAlignment: end
+    cardView:
+      - type
+      - 'layoutElement:eba7f61c-612e-4890-9be1-6fe4d113bee9'
+      - 'layoutElement:1ce46f7f-f360-4c0c-a3c5-8f216da71efa'
+      - section
+      - slug
     tabs:
       -
         elementCondition: null
@@ -13,7 +19,7 @@ fieldLayouts:
             elementCondition: null
             fieldUid: ce07f73d-0a29-477e-bf3a-48b879b761da # Featured Module
             handle: moduleContent
-            includeInCards: false
+            includeInCards: true
             instructions: null
             label: 'Module Content'
             providesThumbs: false
@@ -30,7 +36,7 @@ fieldLayouts:
             elementCondition: null
             fieldUid: d8080151-3270-46af-9ba2-f8ce5480d468 # Generic Link
             handle: moduleType
-            includeInCards: false
+            includeInCards: true
             instructions: null
             label: 'Module Content Type'
             providesThumbs: false
