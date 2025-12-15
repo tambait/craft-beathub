@@ -1,0 +1,31 @@
+# Craft CMS Environment
+.env
+storage/*
+!storage/.gitignore
+web/cpresources/*
+
+# DDEV
+.ddev/.dbimageBuild/
+.ddev/.dbimage/
+
+# Composer
+vendor/
+
+# Node/npm
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# IDE Files
+.idea/
+.vscode/
+*.sublime-workspace
+*.tmproj
+
+# OS and Misc
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.bak

@@ -1,0 +1,45 @@
+columnSuffix: null
+handle: modules
+instructions: null
+name: Modules
+searchable: false
+settings:
+  createButtonLabel: 'Add New Module'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 955092a2-a9a7-4c91-82b8-f4c35e7bc27a # Local - Testimonial
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 383cb3e7-0786-483a-9c3c-e05317a795b6 # Global Testimonial
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 226adc8d-b441-45fa-a7c7-3dc484ed9260 # Local  - Newsletter
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

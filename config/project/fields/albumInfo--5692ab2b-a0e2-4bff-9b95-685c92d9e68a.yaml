@@ -1,0 +1,152 @@
+columnSuffix: null
+handle: albumInfo
+instructions: null
+name: 'Album Info'
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - f20a0331-2bdd-4ac2-bdfa-3f80b544be35
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - 526d659d-c479-479b-a85b-7c501d3de5bf
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - albumCover
+                            2:
+                              - label
+                              - 'Album Cover'
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-12-09T09:51:00+00:00'
+                            11:
+                              - uid
+                              - 6ed91811-9338-461a-9e88-9c12152caf88
+                            14:
+                              - fieldUid
+                              - a4bb9690-c1d0-4725-bccf-67eb95a1dcee # Featured Image
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - releaseYear
+                            2:
+                              - label
+                              - 'Release Year'
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-12-09T09:51:00+00:00'
+                            11:
+                              - uid
+                              - 080eafe4-9432-49ef-8bc9-5a595540faea
+                            14:
+                              - fieldUid
+                              - d1363434-30cc-44a9-b67e-aa54b2f53d2a # Release Year
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-12-09T09:51:00+00:00'
+                            11:
+                              - uid
+                              - 7abe0e9c-da31-48e8-a1df-88a72e41d991
+                            14:
+                              - fieldUid
+                              - a9c5c515-d858-4a56-9491-4b0e57376c36 # Description
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - artists
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-12-09T09:51:00+00:00'
+                            11:
+                              - uid
+                              - 667f4201-4156-4a5b-9925-fe0d80eb393a
+                            14:
+                              - fieldUid
+                              - 82d9e56f-90c6-427c-be20-c5380abee294 # Artists
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

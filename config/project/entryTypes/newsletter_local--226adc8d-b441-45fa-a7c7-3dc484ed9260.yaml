@@ -1,0 +1,121 @@
+color: null
+description: null
+fieldLayouts:
+  d77824e5-42b2-4942-9616-1eb0913a364e:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-12-14T21:48:34+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 250be134-8870-4971-8f17-05a23f0d7b90
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-14T21:52:04+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a9c5c515-d858-4a56-9491-4b0e57376c36 # Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 628fa5bc-9f54-4ab2-ba58-3c9931a024ea
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-14T21:52:04+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 114968aa-59bf-4be9-83d2-983ebc35f801 # Generic Text
+            handle: sideTitleOne
+            includeInCards: false
+            instructions: null
+            label: 'Side Title 1'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 239a1759-3ab0-4f0c-913a-b49fc22c562a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-14T21:52:04+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 114968aa-59bf-4be9-83d2-983ebc35f801 # Generic Text
+            handle: sideTitleTwo
+            includeInCards: false
+            instructions: null
+            label: 'Side Title Two'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4bdf735e-3cce-4bac-927f-f3075a95b000
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-14T21:52:04+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2c9366bb-4de0-4c43-a8bf-50e3116e21b2 # Button Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 337fc78c-17b2-4b42-b532-cbd12ed4cecf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bc21a700-7554-4434-ac5d-56def4b76d67
+        userCondition: null
+handle: newsletter_local
+hasTitleField: true
+icon: null
+name: 'Local  - Newsletter'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

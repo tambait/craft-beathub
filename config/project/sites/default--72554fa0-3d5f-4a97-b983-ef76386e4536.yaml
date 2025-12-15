@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: en
+name: English
+primary: true
+siteGroup: 31e60b5d-9b76-4246-b0d0-f5f0fa5e7adf # beathub
+sortOrder: 1

@@ -1,0 +1,263 @@
+color: null
+description: null
+fieldLayouts:
+  e87a74c9-5304-4ac9-8ce8-605653622e95:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-12-08T15:39:36+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e6e5d7ca-0281-4f4d-81d7-ad3353c4a8ea
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T09:41:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a4bb9690-c1d0-4725-bccf-67eb95a1dcee # Featured Image
+            handle: artistImage
+            includeInCards: false
+            instructions: null
+            label: ArtistImage
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 59e0a2d7-b93c-4d70-8223-c7bc02c598d0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T09:41:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a4bb9690-c1d0-4725-bccf-67eb95a1dcee # Featured Image
+            handle: featuredImage
+            includeInCards: false
+            instructions: null
+            label: 'Featured Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2879c7ea-6c79-4b0b-9f0e-b2b46a55802b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T15:04:12+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d8080151-3270-46af-9ba2-f8ce5480d468 # Generic Link
+            handle: websiteUrl
+            includeInCards: false
+            instructions: null
+            label: 'Website Url'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 403208eb-bff4-4e9f-a2e8-1eb92a9def8a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T11:40:21+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: fb073795-6105-4674-9f1f-4937c4e707b0 # Streaming Platforms
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e6398fe1-32dc-4efc-b0c7-c0b2f13a0492
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T09:38:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 03639852-b606-4b16-9901-5bc7bf8ea0ea # Related Albums
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 65de6f3f-1ac6-450f-aaaf-0e6e8237095d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T09:38:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 31942f1f-9227-48fa-ac3e-642e2c66981e # Related Songs
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fd5c7b12-77ea-4448-b9d4-cac166f5d4a5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T09:38:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 785aaea6-a4a9-4a61-8041-cfcc1445a8b4 # Featured
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 18db77b5-d48d-4459-99c2-002330658a5b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T15:26:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a9c5c515-d858-4a56-9491-4b0e57376c36 # Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: db56c7ee-96b3-42f2-93cd-ea41233403f7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T09:41:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2257aace-8e7b-4240-9030-ce97c03a8148 # Rich Text
+            handle: biography
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 864b8388-4c86-4e91-abf6-cd711d390eef
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T14:55:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 49c9d7c0-ab2f-4a7e-9222-0025fe56505c # Genres
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 23cc2328-7203-48b1-ad93-2c3bccb8d3d1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-14T12:17:42+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7968bafd-fd4d-4fc1-9a33-5116e62eab1d # Modules
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 695d911d-879d-4be9-99f2-796eb0e454db
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6ea951d2-5434-40c8-bfb5-82145112e99e
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-12-09T09:38:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 01f1b6b9-5847-4812-9167-2b53fab1d190 # Seo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5702d32-e811-4777-92fe-966f27063298
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 7be63f3c-dbfc-4e24-880d-713da6a13dee
+        userCondition: null
+handle: artistEntry
+hasTitleField: true
+icon: null
+name: 'Artist Profile'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

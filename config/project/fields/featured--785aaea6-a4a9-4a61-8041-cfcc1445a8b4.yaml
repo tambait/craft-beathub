@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: featured
+instructions: null
+name: Featured
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: 'Featured Artist'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

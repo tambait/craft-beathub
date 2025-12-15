@@ -1,0 +1,4 @@
+services:
+  web:
+    volumes:
+      - "/opt/mtly/work/clients/willageone/craftcms/plugins/showcase-base:/var/www/plugins/showcase-base"

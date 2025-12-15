@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: albumArtists
+instructions: null
+name: Artists
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: 1
+  selectionLabel: 'Add New Artist'
+  showCardsInGrid: false
+  showSearchInput: true
+  showSiteMenu: false
+  showUnpermittedEntries: false
+  showUnpermittedSections: false
+  sources:
+    - 'section:16f2bda6-2975-4e95-9cbd-854dce05b156' # Artists
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

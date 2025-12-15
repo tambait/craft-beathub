@@ -1,0 +1,26 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 955092a2-a9a7-4c91-82b8-f4c35e7bc27a # Local - Testimonial
+handle: testimonials
+maxAuthors: 1
+name: Testimonials
+previewTargets:
+  -
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  72554fa0-3d5f-4a97-b983-ef76386e4536: # English
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  e2b0b11f-ec9d-4b6c-8a49-3c2432648e8d: # Srpskohrvatski
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

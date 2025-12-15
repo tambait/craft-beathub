@@ -1,0 +1,115 @@
+color: null
+description: null
+fieldLayouts:
+  f507f178-d89f-40e3-95b6-6baa1a9e0bb3:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:97abee55-8fb0-476a-8b5a-9e13b8d7e89b'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-12-09T11:29:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7208528b-d4aa-41e5-931d-831e1abcfa34 # Streaming Platforms Dropdown
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 97abee55-8fb0-476a-8b5a-9e13b8d7e89b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T11:29:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d8080151-3270-46af-9ba2-f8ce5480d468 # Generic Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aedcfbc3-9524-4bb2-b079-2d39eebe1a0c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T11:29:02+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\entries\TypeConditionRule
+                  operator: in
+                  uid: ec0dcc95-20a3-4b70-b959-4a5ae62f877b
+                  values:
+                    - 69007a91-49c9-4bb3-8bab-2baea7e9b260 # Artist Profile
+                    - c0107167-04f7-4801-be10-15e19eec930d # Streaming Platforms
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: ca3333d7-ed91-4802-8ce8-01ee641bdb04 # Username
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: af73c848-80a8-4c69-aaa1-c31c9a34f181
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-14T15:35:21+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\entries\TypeConditionRule
+                  operator: in
+                  uid: 8c5e8a28-03d4-4499-bb83-84006b315783
+                  values:
+                    - 1ea72fcf-20f2-49d3-86a8-44cd7426254a # Album Details
+                    - c0107167-04f7-4801-be10-15e19eec930d # Streaming Platforms
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: e83295b5-61c2-4a1d-ace6-dbad64c6fd2e # Media ID
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b9c3e5f2-ae65-498f-9314-1fcb8304584b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 78891094-7ccb-4799-a91f-a615626746ac
+        userCondition: null
+handle: streamingPlatforms
+hasTitleField: false
+icon: null
+name: 'Streaming Platforms'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

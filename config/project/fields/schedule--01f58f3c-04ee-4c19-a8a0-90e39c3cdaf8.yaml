@@ -1,0 +1,123 @@
+columnSuffix: null
+handle: schedule
+instructions: null
+name: schedule
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - d9410457-6ef7-4b4c-9abe-dbcd46095a17
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - 23a7f76b-bf0c-4ced-9ddc-266975aa446a
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-12-11T17:17:57+00:00'
+                            11:
+                              - uid
+                              - e788c1dd-20de-4f72-b552-55e34a1b3eaa
+                            14:
+                              - fieldUid
+                              - 16e9cf02-1097-40a2-96d8-10c5f8890f6c # Event Date
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - startTime
+                            2:
+                              - label
+                              - 'Start Time'
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 25
+                            10:
+                              - dateAdded
+                              - '2025-12-08T21:17:29+00:00'
+                            11:
+                              - uid
+                              - 6d8aefc3-f7b0-467f-9c94-65f880d6f4c7
+                            14:
+                              - fieldUid
+                              - ee7889a8-8f08-4071-b6e6-2c3ed15a179e # Time
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - endTime
+                            2:
+                              - label
+                              - 'End Time'
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 25
+                            10:
+                              - dateAdded
+                              - '2025-12-08T21:17:29+00:00'
+                            11:
+                              - uid
+                              - bfbe68d0-2ffd-4481-adf0-f20e0d2da5c7
+                            14:
+                              - fieldUid
+                              - ee7889a8-8f08-4071-b6e6-2c3ed15a179e # Time
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: pane
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

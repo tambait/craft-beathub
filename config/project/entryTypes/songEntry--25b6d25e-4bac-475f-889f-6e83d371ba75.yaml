@@ -1,0 +1,70 @@
+color: null
+description: null
+fieldLayouts:
+  d17c0ad7-e479-484b-85ba-da06c366c126:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-12-08T15:41:35+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 6ce75038-9e81-4815-8eb9-99cd7a967383
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T11:21:05+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3b1e2c5-1d6c-4815-9c6d-5a050bf03731 # Song Info
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b04efa22-a063-46bf-bf5c-c9b2ee9329e2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 38d1c47a-a5e5-4c53-89e6-ec97d942de1b
+        userCondition: null
+handle: songEntry
+hasTitleField: true
+icon: null
+name: 'Song Details'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

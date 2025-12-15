@@ -1,0 +1,121 @@
+color: null
+description: null
+fieldLayouts:
+  65d37e7a-3347-4de0-8b74-faafa5501df9:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-12-14T19:57:32+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 59e5d587-5c35-4677-aa1b-a6d3069679d4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-14T20:06:41+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a9c5c515-d858-4a56-9491-4b0e57376c36 # Description
+            handle: testimonialText
+            includeInCards: false
+            instructions: null
+            label: 'Testimonial Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e32b0164-66c8-4a27-adb5-ad06b33b3b2e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-14T20:06:41+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 02453f37-1fce-4387-b7e7-c9fcff26cfb7 # Generic Image
+            handle: testimonialAuthorImage
+            includeInCards: false
+            instructions: null
+            label: 'Testimonial Author Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f30e35c4-94e1-4859-acdc-6ad3a236998a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-14T20:06:41+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 114968aa-59bf-4be9-83d2-983ebc35f801 # Generic Text
+            handle: testimonialAuthor
+            includeInCards: false
+            instructions: null
+            label: Name
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 65cb7113-bcb6-4c84-94cb-92e38b952e79
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-14T20:39:37+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 114968aa-59bf-4be9-83d2-983ebc35f801 # Generic Text
+            handle: testimonialAuthorRole
+            includeInCards: false
+            instructions: null
+            label: 'Testimonial Author Role'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0dc8d081-5605-44ef-9804-d09772dd516c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 05a6b067-23ee-4754-9477-70860b5f1419
+        userCondition: null
+handle: testimonial_local
+hasTitleField: true
+icon: null
+name: 'Local - Testimonial'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,27 @@
+columnSuffix: null
+handle: featuredModule
+instructions: null
+name: 'Featured Module'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSearchInput: true
+  showSiteMenu: false
+  showUnpermittedEntries: false
+  showUnpermittedSections: false
+  sources:
+    - 'section:85693be5-df4f-4231-a3b7-a5e47e673607' # Newsletter
+    - 'section:e7a9c137-4cdc-432c-b074-8a5b9532d394' # Testimonials
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

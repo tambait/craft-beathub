@@ -1,0 +1,55 @@
+defaultPlacement: end
+fieldLayouts:
+  0a8b54ad-22ea-44a0-947b-1653e7b0b05b:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-12-09T14:45:49+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 7ad8fbe0-66a8-4e11-947b-70f8e670d6ca
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dbb81224-6e0c-4552-b0a2-1763487f8014
+        userCondition: null
+handle: genres
+name: Genres
+siteSettings:
+  72554fa0-3d5f-4a97-b983-ef76386e4536: # English
+    hasUrls: true
+    template: pages/generic/_entry.twig
+    uriFormat: 'genres/{slug}'
+  e2b0b11f-ec9d-4b6c-8a49-3c2432648e8d: # Srpskohrvatski
+    hasUrls: true
+    template: pages/generic/_entry.twig
+    uriFormat: 'genres/{slug}'
+structure:
+  maxLevels: null
+  uid: 8e512417-eafa-4043-8c85-5f3120ef24c9

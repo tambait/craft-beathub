@@ -1,0 +1,15 @@
+vendor/
+config/
+
+package-lock.json
+composer.json
+composer.lock
+
+storage/
+web/cpresources/
+web/static/dist/
+web/uploads/
+templates/feed.rss
+templates/_macros.twig
+
+.ddev/

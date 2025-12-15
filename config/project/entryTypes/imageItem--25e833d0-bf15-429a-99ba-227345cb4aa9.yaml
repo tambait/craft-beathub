@@ -1,0 +1,61 @@
+color: null
+description: null
+fieldLayouts:
+  e96575bb-5c1b-4f62-86ec-5c5deedeb439:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:c052ab60-593b-4048-9c29-28c7bee3bf64'
+      - type
+      - 'layoutElement:01f203ac-8b64-4b12-833b-5f5084a8be5b'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-12-14T12:16:54+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 02453f37-1fce-4387-b7e7-c9fcff26cfb7 # Generic Image
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 01f203ac-8b64-4b12-833b-5f5084a8be5b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-14T14:16:39+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a9c5c515-d858-4a56-9491-4b0e57376c36 # Description
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c052ab60-593b-4048-9c29-28c7bee3bf64
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4c85d8ee-6c78-435a-93f7-4927f62fd34c
+        userCondition: null
+handle: imageItem
+hasTitleField: false
+icon: null
+name: 'Image Item'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,168 @@
+color: null
+description: null
+fieldLayouts:
+  e6b733c1-9c81-4603-85fb-8f36b5b79a36:
+    cardThumbAlignment: end
+    cardView:
+      - 'generatedField:68c61f81-ffc0-4d6b-aee7-04023cc66f5d'
+    generatedFields:
+      -
+        handle: artistIds
+        name: 'Album Artists Ids'
+        template: "{{ owner.albumInfo.artists.ids()|join(',') }}"
+        uid: c86b3c19-673a-4ecc-a62b-26b177062a0b
+      -
+        handle: albumArtistsNames
+        name: 'Album Artists Names'
+        template: "{{ owner.albumInfo.artists.title()|join(',') }}"
+        uid: 68c61f81-ffc0-4d6b-aee7-04023cc66f5d
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-12-08T15:41:06+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2b5a5b43-2a94-4842-bec9-d016218d73ec
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T10:32:12+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a4bb9690-c1d0-4725-bccf-67eb95a1dcee # Featured Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 59e48121-9653-47f0-a76f-ac11e275e163
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T10:32:12+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 785aaea6-a4a9-4a61-8041-cfcc1445a8b4 # Featured
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 26026658-aec2-4266-a77e-d31972bef9f3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T10:32:12+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 5692ab2b-a0e2-4bff-9b95-685c92d9e68a # Album Info
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0624ec25-fd2c-4f02-933a-ef5d85c99fad
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T11:39:52+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: fb073795-6105-4674-9f1f-4937c4e707b0 # Streaming Platforms
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1fe2a5ca-aa24-4392-af76-f6e924b62206
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-09T10:41:42+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8c45810d-2054-487d-ab7e-3663d96fab21 # Album Tracks
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3aa921e7-6efa-40a0-ac2d-1ab9f34e6082
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-14T12:51:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7968bafd-fd4d-4fc1-9a33-5116e62eab1d # Modules
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1b1d3768-59a9-4e6c-bee3-5496b76560df
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 113f350e-afe8-4208-9a3c-e081b5991755
+        userCondition: null
+handle: albumEntry
+hasTitleField: true
+icon: null
+name: 'Album Details'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

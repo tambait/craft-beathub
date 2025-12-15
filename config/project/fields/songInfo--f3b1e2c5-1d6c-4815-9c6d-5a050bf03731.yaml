@@ -1,0 +1,143 @@
+columnSuffix: null
+handle: songInfo
+instructions: null
+name: 'Song Info'
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - f80e3d3a-d825-4788-b262-5cfeaf124525
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - 2dd10810-136b-4040-8c3f-092e0a0170dd
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - duration
+                            2:
+                              - label
+                              - Duration
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-12-09T10:38:54+00:00'
+                            11:
+                              - uid
+                              - 78e1b6ce-583d-41f7-8cf2-5c86fe6136ca
+                            14:
+                              - fieldUid
+                              - ee7889a8-8f08-4071-b6e6-2c3ed15a179e # Time
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-12-09T10:38:54+00:00'
+                            11:
+                              - uid
+                              - 02e1be70-8c87-4894-aaac-99f9ff3f5e05
+                            14:
+                              - fieldUid
+                              - 49a28108-be18-4f67-bd8d-934ab444117d # Lyrics
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-12-09T10:38:54+00:00'
+                            11:
+                              - uid
+                              - 1a4dd06f-a2a9-4406-bd81-25fec95fb466
+                            14:
+                              - fieldUid
+                              - 785aaea6-a4a9-4a61-8041-cfcc1445a8b4 # Featured
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-12-09T11:31:56+00:00'
+                            11:
+                              - uid
+                              - a318c34f-b3c6-4ff1-945f-15f254c20485
+                            14:
+                              - fieldUid
+                              - fb073795-6105-4674-9f1f-4937c4e707b0 # Streaming Platforms
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

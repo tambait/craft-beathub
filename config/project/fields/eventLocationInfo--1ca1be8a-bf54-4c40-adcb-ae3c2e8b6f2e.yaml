@@ -1,0 +1,160 @@
+columnSuffix: null
+handle: eventLocationInfo
+instructions: null
+name: 'Event Location Info'
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - 10d9eef6-b07e-4c88-8be9-782607710db1
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    1:
+                      - uid
+                      - e1e17095-d463-4956-860c-e344a75d1e02
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-12-08T21:05:02+00:00'
+                            11:
+                              - uid
+                              - 0d977913-2677-484e-b383-db5d05194857
+                            14:
+                              - fieldUid
+                              - c175fdc7-32a5-4d63-adf2-6b0a6e813c94 # Location
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-12-08T21:05:02+00:00'
+                            11:
+                              - uid
+                              - 6f228c4a-3f3d-4111-9d09-2f7d7849ea84
+                            14:
+                              - fieldUid
+                              - ade35723-8e43-467f-a759-e62ab2fdd02a # Venue Name
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-12-08T21:05:02+00:00'
+                            11:
+                              - uid
+                              - b0321da4-b8eb-4c5a-a42b-b3b9e90dab9e
+                            14:
+                              - fieldUid
+                              - d080b322-e2d0-4e4a-9472-5ed8e4262a8b # Venue Address
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-12-08T21:05:02+00:00'
+                            11:
+                              - uid
+                              - ff1b960a-6b91-4cd0-83e4-f7815216576e
+                            14:
+                              - fieldUid
+                              - 9cbb4a80-92f9-4596-9106-91cd1ee29c4a # City
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-12-08T21:05:02+00:00'
+                            11:
+                              - uid
+                              - 675d0df0-f343-4b80-8b9e-ba776b8a9e16
+                            14:
+                              - fieldUid
+                              - 990daab5-eb48-4a57-9c0d-24d780c3b5bf # Country
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

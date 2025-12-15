@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: navLinks
+instructions: null
+name: 'Nav Links'
+searchable: false
+settings:
+  createButtonLabel: 'Link Group'
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - c86f2a45-9639-4151-93dc-21dce075b6f9
+  includeTableView: false
+  maxEntries: 5
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: none
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

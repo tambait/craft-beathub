@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: imageCollection
+instructions: null
+name: 'Image Collection'
+searchable: false
+settings:
+  createButtonLabel: 'Add New Image'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 25e833d0-bf15-429a-99ba-227345cb4aa9 # Image Item
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: true
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

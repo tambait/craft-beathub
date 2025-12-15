@@ -1,0 +1,57 @@
+color: null
+description: null
+fieldLayouts:
+  b1286504-6f48-415b-81d9-4d6e7112d614:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-12-14T20:28:50+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ce07f73d-0a29-477e-bf3a-48b879b761da # Featured Module
+            handle: moduleContent
+            includeInCards: false
+            instructions: null
+            label: 'Module Content'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eba7f61c-612e-4890-9be1-6fe4d113bee9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-14T21:57:33+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d8080151-3270-46af-9ba2-f8ce5480d468 # Generic Link
+            handle: moduleType
+            includeInCards: false
+            instructions: null
+            label: 'Module Content Type'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1ce46f7f-f360-4c0c-a3c5-8f216da71efa
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a40b3c59-9efd-456a-bb56-df190248107f
+        userCondition: null
+handle: testimonial_global
+hasTitleField: false
+icon: null
+name: 'Global Testimonial'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

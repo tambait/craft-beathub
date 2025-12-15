@@ -1,0 +1,239 @@
+dateModified: 1765800618
+elementSources:
+  craft\elements\Entry:
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      defaultSort:
+        - title
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: singles
+      tableAttributes:
+        - status
+        - link
+      type: native
+    -
+      heading: Pages
+      key: 'heading:9afa983d-9a38-401c-b382-75369e41f1cf'
+      type: heading
+    -
+      key: 'section:6d62a745-263a-4b88-9420-804423f67d4f' # Albums
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:16f2bda6-2975-4e95-9cbd-854dce05b156' # Artists
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'section:fd5f6792-0afa-4003-82f7-122c0a353f3b' # Events
+      type: native
+    -
+      key: 'section:bb5b2a16-bfa0-460a-8b36-6d6d9fe01a3e' # News
+      type: native
+    -
+      key: 'section:8659f6d3-1209-4633-b230-72f25b7ec322' # Songs
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:87af7ec4-0963-4dc4-8684-95226e9d1d2f' # Generic Pages
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: 'Content Bank'
+      key: 'heading:dc216736-b6d2-42ad-a7f2-8f758cc4bd6d'
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:e7a9c137-4cdc-432c-b074-8a5b9532d394' # Testimonials
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:85693be5-df4f-4231-a3b7-a5e47e673607' # Newsletter
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+email:
+  fromEmail: webwave011@gmail.com
+  fromName: beathub
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  uploadsFs:
+    hasUrls: true
+    name: 'Uploads FS'
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: '@web/uploads'
+meta:
+  __names__:
+    1ca1be8a-bf54-4c40-adcb-ae3c2e8b6f2e: 'Event Location Info' # Event Location Info
+    1ea72fcf-20f2-49d3-86a8-44cd7426254a: 'Album Details' # Album Details
+    01f1b6b9-5847-4812-9167-2b53fab1d190: Seo # Seo
+    01f58f3c-04ee-4c19-a8a0-90e39c3cdaf8: schedule # schedule
+    2c9366bb-4de0-4c43-a8bf-50e3116e21b2: 'Button Text' # Button Text
+    2dae0a42-be0f-40ca-bddb-0d02be719e26: '5/4: w800' # 5/4: w800
+    3bd68375-ba91-4142-9f8a-9c2ad1d56e8c: 'Event Details' # Event Details
+    5bc4069a-ab98-412d-b924-e02887e903b3: '4/3: w2000' # 4/3: w2000
+    06ace211-43d5-4696-b063-099516a70739: Simple # Simple
+    6b69b2a1-7434-4d7c-ab13-a468706f0759: 'Generic Page' # Generic Page
+    6d62a745-263a-4b88-9420-804423f67d4f: Albums # Albums
+    7c5f1b78-d42d-4400-b496-33609246dd83: 'Home Page' # Home Page
+    7e9e1e86-3f4e-4d20-850c-19e356949194: '4/3: w1600' # 4/3: w1600
+    7ee0229f-12c1-4ffd-adbb-fd15abc5b402: 'Event Artists' # Event Artists
+    8b3119a0-2fb5-4ba7-8068-4d0057eaf8c3: 'About Page' # About Page
+    8c45810d-2054-487d-ab7e-3663d96fab21: 'Album Tracks' # Album Tracks
+    8d4ed15c-dd0c-4e96-ae25-ff97b2b6bf03: w300 # w300
+    9cbb4a80-92f9-4596-9106-91cd1ee29c4a: City # City
+    9d1d1e0e-1df6-42bf-9568-6bcd5c3cc2a8: 'Promo section' # Promo section
+    16e9cf02-1097-40a2-96d8-10c5f8890f6c: 'Event Date' # Event Date
+    16f2bda6-2975-4e95-9cbd-854dce05b156: Artists # Artists
+    25b6d25e-4bac-475f-889f-6e83d371ba75: 'Song Details' # Song Details
+    25e833d0-bf15-429a-99ba-227345cb4aa9: 'Image Item' # Image Item
+    31e60b5d-9b76-4246-b0d0-f5f0fa5e7adf: beathub # beathub
+    49a28108-be18-4f67-bd8d-934ab444117d: Lyrics # Lyrics
+    49c9d7c0-ab2f-4a7e-9222-0025fe56505c: Genres # Genres
+    55e080a1-4fb8-4404-9c1b-7694524ff1ee: Title # Title
+    67b4e70e-1a4a-49b5-ab41-3f48a1b32513: '4/3: w800' # 4/3: w800
+    82d9e56f-90c6-427c-be20-c5380abee294: Artists # Artists
+    87af7ec4-0963-4dc4-8684-95226e9d1d2f: 'Generic Pages' # Generic Pages
+    91a7ad8a-d35b-4738-b71b-a18f899afc5d: w2000 # w2000
+    94e2e277-d203-466d-82f4-052ed1cf3851: Uploads # Uploads
+    226adc8d-b441-45fa-a7c7-3dc484ed9260: 'Local  - Newsletter' # Local  - Newsletter
+    383cb3e7-0786-483a-9c3c-e05317a795b6: 'Global Testimonial' # Global Testimonial
+    504f909d-20af-4a66-b4a5-46c966689b30: w1200 # w1200
+    646fed4b-fc85-4ed3-8082-aace0ad37228: '4/3: w1200' # 4/3: w1200
+    785aaea6-a4a9-4a61-8041-cfcc1445a8b4: Featured # Featured
+    976d435f-8efa-468d-88d5-e608f889fcad: Homepage # Homepage
+    990daab5-eb48-4a57-9c0d-24d780c3b5bf: Country # Country
+    2257aace-8e7b-4240-9030-ce97c03a8148: 'Rich Text' # Rich Text
+    02453f37-1fce-4387-b7e7-c9fcff26cfb7: 'Generic Image' # Generic Image
+    4014ee8b-e895-4a22-a40b-ddece7bb3bcc: '3/2: w2000' # 3/2: w2000
+    5692ab2b-a0e2-4bff-9b95-685c92d9e68a: 'Album Info' # Album Info
+    7968bafd-fd4d-4fc1-9a33-5116e62eab1d: Modules # Modules
+    8659f6d3-1209-4633-b230-72f25b7ec322: Songs # Songs
+    22053b2d-7f52-4a35-a034-0def65641e93: 'News Article' # News Article
+    31942f1f-9227-48fa-ac3e-642e2c66981e: 'Related Songs' # Related Songs
+    69007a91-49c9-4bb3-8bab-2baea7e9b260: 'Artist Profile' # Artist Profile
+    72554fa0-3d5f-4a97-b983-ef76386e4536: English # English
+    85693be5-df4f-4231-a3b7-a5e47e673607: Newsletter # Newsletter
+    114968aa-59bf-4be9-83d2-983ebc35f801: 'Generic Text' # Generic Text
+    586087db-4dd7-43ba-929b-b3f7cef02ff8: w800 # w800
+    955092a2-a9a7-4c91-82b8-f4c35e7bc27a: 'Local - Testimonial' # Local - Testimonial
+    03639852-b606-4b16-9901-5bc7bf8ea0ea: 'Related Albums' # Related Albums
+    7208528b-d4aa-41e5-931d-831e1abcfa34: 'Streaming Platforms Dropdown' # Streaming Platforms Dropdown
+    a4bb9690-c1d0-4725-bccf-67eb95a1dcee: 'Featured Image' # Featured Image
+    a9c5c515-d858-4a56-9491-4b0e57376c36: Description # Description
+    aa5a4279-2914-491e-8808-8010bd65fbf9: '3/2: w1600' # 3/2: w1600
+    ad6378ef-e24f-4541-9819-1a644a3dd8c4: 'Nav Links' # Nav Links
+    ade35723-8e43-467f-a759-e62ab2fdd02a: 'Venue Name' # Venue Name
+    b46f826b-dfdb-409c-b483-08cf751ab744: '5/4: w2000' # 5/4: w2000
+    b679179f-230c-44d5-a29d-2858d82c9ecd: '3/2: w1200' # 3/2: w1200
+    bb5b2a16-bfa0-460a-8b36-6d6d9fe01a3e: News # News
+    bf0cda56-d723-4b47-898e-f74730a328b2: '3/2: w800' # 3/2: w800
+    c0107167-04f7-4801-be10-15e19eec930d: 'Streaming Platforms' # Streaming Platforms
+    c8c2dcfa-75cb-423f-9565-b550807d0e7e: w1500 # w1500
+    c94fde1d-e39d-42fe-b771-7e2a22535e6c: '5/4: w1600' # 5/4: w1600
+    c175fdc7-32a5-4d63-adf2-6b0a6e813c94: Location # Location
+    ca3333d7-ed91-4802-8ce8-01ee641bdb04: Username # Username
+    ce07f73d-0a29-477e-bf3a-48b879b761da: 'Featured Module' # Featured Module
+    d080b322-e2d0-4e4a-9472-5ed8e4262a8b: 'Venue Address' # Venue Address
+    d4c24b33-4a46-4c55-980e-c1d4af12f9bf: '5/4: w1200' # 5/4: w1200
+    d1363434-30cc-44a9-b67e-aa54b2f53d2a: 'Release Year' # Release Year
+    d8080151-3270-46af-9ba2-f8ce5480d468: 'Generic Link' # Generic Link
+    e0be08b6-634c-4eed-aa9a-175b6bc828c1: 'Enable Announcement Bar' # Enable Announcement Bar
+    e2b0b11f-ec9d-4b6c-8a49-3c2432648e8d: Srpskohrvatski # Srpskohrvatski
+    e6ecced8-cbaf-4fb3-8a6f-ebff85a76a62: 'Image Collection' # Image Collection
+    e7a9c137-4cdc-432c-b074-8a5b9532d394: Testimonials # Testimonials
+    e13f63b7-a610-4ae9-bc24-1012bd25c8bc: Genres # Genres
+    e83295b5-61c2-4a1d-ace6-dbad64c6fd2e: 'Media ID' # Media ID
+    ee7889a8-8f08-4071-b6e6-2c3ed15a179e: Time # Time
+    f3b1e2c5-1d6c-4815-9c6d-5a050bf03731: 'Song Info' # Song Info
+    f12c5679-358a-4c01-99e7-465ae0a172fd: About # About
+    fb073795-6105-4674-9f1f-4937c4e707b0: 'Streaming Platforms' # Streaming Platforms
+    fd5f6792-0afa-4003-82f7-122c0a353f3b: Events # Events
+plugins:
+  _showcase-base:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  knock-knock:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.1
+  retcon:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: T7PLXDWWNIV7D7ZGWAETNSOG
+    schemaVersion: 3.0.13
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+searchable: false
+system:
+  edition: solo
+  live: true
+  name: beathub
+  schemaVersion: 5.8.0.3
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

@@ -1,0 +1,76 @@
+color: null
+description: null
+fieldLayouts:
+  0f1f07f7-000e-4479-8c53-a06ebe3546b1:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-12-15T08:42:41+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 60ccda7b-8554-4e86-aa23-9d662537f92d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-15T08:44:55+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 6903c726-a5ea-48af-9b42-df686f84cc97
+            userCondition: null
+          -
+            dateAdded: '2025-12-15T08:44:55+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7968bafd-fd4d-4fc1-9a33-5116e62eab1d # Modules
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2daa9baa-5535-43b1-a2ea-4f93772499dd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 67fa0329-794b-4a04-b1bf-0b0b2579c71e
+        userCondition: null
+handle: genericPage
+hasTitleField: true
+icon: null
+name: 'Generic Page'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
