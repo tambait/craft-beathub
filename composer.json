@@ -40,10 +40,6 @@
       "type": "composer",
       "url": "https://composer.craftcms.com",
       "canonical": false
-    },
-    {
-      "type": "path",
-      "url": "/var/www/plugins/showcase-base"
     }
   ]
 }
