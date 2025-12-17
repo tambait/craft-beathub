@@ -30,9 +30,8 @@ class MusicService extends QueryService
 
 
     /**
-     * NOTE:
-     * Nested fields inside Content Blocks (e.g. `albumInfo.artists`) do not appear
-     * to be queryable directly on the owning entry (`Album`) by default.
+     * @TODO Nested fields inside Content Blocks (e.g. `albumInfo.artists`)
+     * do not appear to be queryable directly on the owning entry (`Album`) by default.
      *
      * WORKAROUND:
      * To query `Album` entries by a nested field (e.g. `artists`), a hoisted field
