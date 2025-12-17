@@ -1,6 +1,6 @@
 {% extends "_layouts/layout.twig" %}
 {% block content %}
-  {% if pageContext == "artists" %}
+  {% if pageContext in ["artists", "bendovi"] %}
     {% set artists =
       craft.app.mQuery.getArtists({
         orderBy: "title"
@@ -13,7 +13,8 @@
       columns: "3"
     } %}
   {% endif %}
-  {% if pageContext == "albums" %}
+
+  {% if pageContext in ["albums", "albumi"] %}
     {% set albums =
       craft.app.mQuery.getAlbums({
         orderBy: "postDate desc",
@@ -22,6 +23,7 @@
         ["coverImage", "artist"]
       ).all()
     %}
+
     {% include "showcase/_components/card-grid-section" with {
       items: albums,
       type: "album",
