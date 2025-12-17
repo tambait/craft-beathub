@@ -56,29 +56,40 @@
     {{ head() }}
   </head>
   <body>
-    {% set headerConfig = {
+
+    {% set links = [] %}
+
+    {# Homepage #}
+    {% set links = links|merge([{
+        key: 'home',
+        name: 'nav.home'|t,
+        url: siteUrl('', "", "", currentSite.id)
+    }]) %}
+
+    {# Artists - use different slug per language #}
+    {% set artistsSlug = currentSite.handle == "srpskohrvatski" ? "bendovi" : "artists" %}
+    {% set links = links|merge([{
+        key: 'artists',
+        name: 'nav.artists'|t,
+        url: siteUrl(artistsSlug, "", "", currentSite.id)
+    }]) %}
+
+    {# Albums - different slug per language #}
+    {% set albumsSlug = currentSite.handle == "srpskohrvatski" ? "albumi" : "albums" %}
+    {% set links = links|merge([{
+        key: 'albums',
+        name: 'nav.albums'|t,
+        url: siteUrl(albumsSlug, "", "", currentSite.id)
+    }]) %}
+
+    {% set menuConfig = {
       logoText: "beatHub",
-      logoUrl: "/",
-      links: [
-        {
-          name: "Home",
-          url: "/",
-          active: true
-        },
-        {
-          name: "Artists",
-          url: "/artists",
-          active: false
-        },
-        {
-          name: "Albums",
-          url: "/albums",
-          active: false
-        }
-      ]
+      logoUrl: siteUrl(),
+      links: links
     } %}
+
     {% include "showcase/_modules/header" with {
-      headerConfig: headerConfig
+      headerConfig: menuConfig
     } only %}
     {# Get current page slug or handle #}
     {% set currentPage = entry.slug ?? entry.type.handle ?? "home" %}
@@ -125,6 +136,8 @@
         entry: entry
       } %}
     {% endif %}
-    {% include "showcase/_modules/footer.twig" only %}
+    {% include "showcase/_modules/footer.twig" with {
+      menu: menuConfig
+    } only %}
   </body>
 </html>
