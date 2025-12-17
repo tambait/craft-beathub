@@ -1,4 +1,4 @@
-dateModified: 1765819261
+dateModified: 1765977090
 elementSources:
   craft\elements\Entry:
     -
@@ -210,6 +210,49 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.1.1
+    settings:
+      allowIps: ''
+      checkInvalidLogins: false
+      denyIps: ''
+      enableCpProtection: true
+      enabled: true
+      forcedRedirect: ''
+      invalidLoginWindowDuration: '3600'
+      loginPath: ''
+      maxInvalidLogins: 10
+      password: showcase
+      protectedUrls: ''
+      siteSettings:
+        __assoc__:
+          -
+            - default
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - ''
+                -
+                  - password
+                  - ''
+                -
+                  - template
+                  - ''
+          -
+            - srpskohrvatski
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - ''
+                -
+                  - password
+                  - ''
+                -
+                  - template
+                  - ''
+      template: ''
+      unprotectedUrls: ''
+      useRemoteIp: false
   retcon:
     edition: standard
     enabled: true

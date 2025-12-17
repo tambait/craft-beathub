@@ -2,7 +2,7 @@ baseUrl: $PRIMARY_SITE_URL/sh
 enabled: '1'
 handle: srpskohrvatski
 hasUrls: true
-language: bs-Latn
+language: bs
 name: Srpskohrvatski
 primary: false
 siteGroup: 31e60b5d-9b76-4246-b0d0-f5f0fa5e7adf # beathub

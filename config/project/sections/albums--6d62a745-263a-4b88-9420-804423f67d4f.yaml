@@ -18,4 +18,9 @@ siteSettings:
     hasUrls: true
     template: pages/albums/_entry.twig
     uriFormat: 'albums/{slug}'
+  e2b0b11f-ec9d-4b6c-8a49-3c2432648e8d: # Srpskohrvatski
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/albums/_entry.twig
+    uriFormat: 'albumi/{slug}'
 type: channel

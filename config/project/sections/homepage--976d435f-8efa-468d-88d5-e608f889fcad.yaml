@@ -18,4 +18,9 @@ siteSettings:
     hasUrls: true
     template: index.twig
     uriFormat: __home__
+  e2b0b11f-ec9d-4b6c-8a49-3c2432648e8d: # Srpskohrvatski
+    enabledByDefault: true
+    hasUrls: true
+    template: index.twig
+    uriFormat: __home__
 type: single
