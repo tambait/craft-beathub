@@ -7,6 +7,7 @@
  * @param {string} type - Should be 'album'
  */
 #}
+
 {% embed "showcase/_components/card-grid-item"
   with {
     item: item,
@@ -31,6 +32,7 @@
     {% endif %}
   {% endblock %}
   {% block metadata %}
+    {% import "showcase/_macros.twig" as m %}
     {# Album-specific metadata #}
     {% if item.albumInfo.artists %}
       <p class="text-base-content/60 text-sm">

@@ -7,7 +7,7 @@
  * @param {string} type - Should be 'artist'
  */
 #}
-{% import "showcase/_macros.twig" as m %}
+
 {% embed "showcase/_components/card-grid-item"
   with {
     item: item,
@@ -29,6 +29,7 @@
     {% endif %}
   {% endblock %}
   {% block metadata %}
+    {% import "showcase/_macros.twig" as m %}
     {# Artist-specific metadata #}
     {% if item.genres.exists() %}
       <div class="flex flex-wrap gap-2">
