@@ -6741,12 +6741,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tambait/craft-showcase-base.git",
-                "reference": "06ad7beb49249f29cac3fd4b4ea3a066091e5072"
+                "reference": "a642fbc4decedafd6d94699d2380a984c07cf8d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tambait/craft-showcase-base/zipball/06ad7beb49249f29cac3fd4b4ea3a066091e5072",
-                "reference": "06ad7beb49249f29cac3fd4b4ea3a066091e5072",
+                "url": "https://api.github.com/repos/tambait/craft-showcase-base/zipball/a642fbc4decedafd6d94699d2380a984c07cf8d3",
+                "reference": "a642fbc4decedafd6d94699d2380a984c07cf8d3",
                 "shasum": ""
             },
             "require": {
@@ -6770,7 +6770,7 @@
                 "source": "https://github.com/tambait/craft-showcase-base/tree/main",
                 "issues": "https://github.com/tambait/craft-showcase-base/issues"
             },
-            "time": "2025-12-15T20:43:21+00:00"
+            "time": "2025-12-17T13:10:22+00:00"
         },
         {
             "name": "theiconic/name-parser",
