@@ -3,6 +3,8 @@ type: craftcms
 docroot: web
 php_version: "8.3"
 webserver_type: nginx-fpm
+router_http_port: "33000"
+router_https_port: "33001"
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
@@ -13,6 +15,8 @@ use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
 corepack_enable: false
+xhgui_https_port: "8142"
+xhgui_http_port: "8143"
 
 # Key features of DDEV's config.yaml:
 
@@ -291,4 +295,3 @@ corepack_enable: false
 # information on the commands that can be extended and the tasks you can define
 # for them. Example:
 #hooks:
-
